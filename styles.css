@@ -1,0 +1,89 @@
+:root {
+  --primary: #0a0b0c;
+  --secondary: #595e63;
+}
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+.payment {
+  width: 40%;
+  margin-top: 40px;
+}
+.button-area {
+  width: 80%;
+  margin: auto;
+}
+.button-area button {
+  width: 100%;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 45px;
+  box-sizing: border-box;
+  padding: 2px;
+  border: none;
+  font-size: 1.5rem;
+}
+.button-area button i {
+  font-size: 4rem;
+  color: rgb(199, 94, 24);
+}
+.card-title {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+p {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--secondary);
+  line-height: 0.1em;
+  margin: 40px 0;
+  font-size: 1rem;
+}
+p span {
+  background: rgb(255, 255, 255);
+  padding: 0 10px;
+  color: var(--secondary);
+}
+form {
+  width: 80%;
+  margin: auto;
+}
+form label {
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 10px;
+  margin-bottom: 8px;
+}
+form input {
+  border-radius: 25px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+.name-area {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.name-area input {
+  width: 49%;
+}
+form button {
+  width: 100%;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 45px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
