@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="payment">
+        <div class="button-area">
+            <button type="button" class="apple-pay-icon">
+                <i class="fab fa-apple-pay"></i>
+            </button>
+        </div>
+        <div class="card-title">
+            <p> <span>Or pay with card </span></p>
+        </div>
+        <form action="">
+            <div class="email-area">
+                <label for="email">Email</label>
+                <input type="email" class="email">
+            </div>
+            <div class="card-info-area">
+                <label for="card-info">Card Information</label>
+                <input type="text" class="card-info">
+            </div>
+            <div >
+                <label>Name On the Card</label>
+                <div class="name-area">
+                    <input type="text" class="first-name" placeholder="First name">
+                    <input type="text" class="last-name" placeholder="Last name">
+                </div>
+            </div>
+            <div class="country-area">
+                <label>Country Region</label>
+                <input type="text" class="country" placeholder="United States">
+            </div>
+            <div class="zip-area">
+                <input type="number" class="zip" placeholder="ZIP">
+            </div>
+            <div >
+                <button>Pay $2000.00</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
