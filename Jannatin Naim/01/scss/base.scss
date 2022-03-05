@@ -1,0 +1,241 @@
+@import "./globals";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.call_to_action {
+    display: block;
+    width: fit-content;
+    font-family: $secondary-font;
+    text-decoration: none;
+    color: $color-white;
+    background: $primary-color;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px 16px 22px -15px $primary-color;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+
+    &__container {
+        padding: 6rem 0;
+    }
+
+    &__content {
+        width: 40%;
+
+        &__name {
+            font-family: $primary-font;
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        &__info {
+            font-family: $secondary-font;
+            opacity: 0.75;
+            margin-bottom: 4rem;
+        }
+
+        &__call_to_action {
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__banner {
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &__image {
+            border-radius: 50%;
+            display: block;
+        }
+
+        &__overlays {
+            > * {
+                position: absolute;
+                border-radius: 0.75rem;
+            }
+
+            &__voucher {
+                left: 0;
+                top: 40%;
+                display: flex;
+                gap: 0.5rem;
+                justify-content: space-between;
+                align-items: center;
+                background: $color-white;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px;
+                padding: 0.75rem;
+
+                &__icon {
+                    border-radius: 50%;
+                }
+
+                &__content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2rem;
+
+                    &__name {
+                        font-family: $primary-font;
+                        font-size: 1.15rem;
+                        font-weight: 500;
+                    }
+
+                    &__info {
+                        font-family: $secondary-font;
+                        font-size: 0.75rem;
+                        opacity: 0.65;
+                    }
+                }
+            }
+
+            &__reviews {
+                left: 0;
+                bottom: 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 0.75rem;
+                background: $color-white;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px;
+
+                &__name {
+                    font-family: $primary-font;
+                    font-weight: 500;
+                }
+
+                &__info {
+                    display: flex;
+                    align-items: center;
+
+                    &__icon {
+                        border-radius: 50%;
+                        margin-right: 0.35rem;
+                    }
+
+                    &__name {
+                        font-family: $primary-font;
+                        font-weight: 500;
+                        margin-right: 0.5rem;
+                    }
+
+                    &__info {
+                        font-family: $secondary-font;
+                        opacity: 0.65;
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+
+            &__stats {
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 0.75rem;
+                background: $color-white;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px;
+
+                &__info {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    &__icon {
+                        border-radius: 50%;
+                    }
+
+                    &__content {
+                        display: flex;
+                        flex-direction: column;
+
+                        &__name {
+                            font-family: $primary-font;
+                            font-weight: 500;
+                        }
+
+                        &__info {
+                            font-family: $secondary-font;
+                            font-size: 0.85rem;
+                            opacity: 0.65;
+                        }
+                    }
+                }
+
+                &__reviewers {
+                    > * {
+                        position: relative;
+                        border-radius: 50%;
+                        border: 2px solid $color-white;
+                    }
+
+                    :nth-child(2) {
+                        left: -1rem;
+                    }
+                    :nth-child(3) {
+                        left: -2rem;
+                    }
+                    :nth-child(4) {
+                        left: -3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__container {
+        padding: 4rem 0;
+    }
+
+    &__highlighted {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        border-right: 2px solid $color-grey;
+        width: 15%;
+
+        &__name {
+            font-family: $primary-font;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        &__info {
+            font-family: $secondary-font;
+            font-weight: 500;
+            opacity: 0.65;
+        }
+    }
+
+    &__showcase {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
