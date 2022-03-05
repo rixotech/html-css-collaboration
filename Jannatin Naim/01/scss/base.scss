@@ -41,6 +41,7 @@
             font-family: $primary-font;
             font-size: 4rem;
             margin-bottom: 2rem;
+            line-height: 4.5rem;
         }
 
         &__info {
@@ -218,6 +219,49 @@
     }
 }
 
+@media (max-width: 1140px) {
+    .hero {
+        flex-direction: column;
+
+        &__content {
+            width: 100%;
+        }
+
+        &__banner {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        &__banner {
+            &__overlays {
+                &__voucher {
+                    top: 30%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                &__reviews {
+                    bottom: auto;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                &__stats {
+                    bottom: auto;
+                    right: auto;
+                    top: 72%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+
 .stats {
     display: flex;
     justify-content: space-between;
@@ -238,6 +282,7 @@
             font-family: $primary-font;
             font-size: 2.5rem;
             font-weight: 700;
+            line-height: 2rem;
         }
 
         &__info {
@@ -255,6 +300,38 @@
 
         > * {
             border-radius: 1rem;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .stats {
+        flex-direction: column;
+
+        &__highlighted {
+            border: none;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        &__showcase {
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            > * {
+                width: 40%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .stats {
+        &__showcase {
+            > * {
+                width: 100%;
+            }
         }
     }
 }
