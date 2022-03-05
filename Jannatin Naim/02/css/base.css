@@ -47,6 +47,7 @@
   font-family: sans-serif;
 }
 .main_header__navigation__list__item--special {
+  margin-left: 4rem;
   border: 1px solid #74c0e7;
   border-radius: 2rem;
   padding: 0.2rem;
