@@ -16,8 +16,7 @@
 }
 
 .call_to_action {
-    display: block;
-    width: fit-content;
+    display: inline-block;
     font-family: $secondary-font;
     text-decoration: none;
     color: $color-white;
@@ -52,6 +51,23 @@
 
         &__call_to_action {
             margin-bottom: 6rem;
+        }
+
+        &__video {
+            display: inline-block;
+
+            &__player {
+                border-radius: 50%;
+                margin-left: 2rem;
+                position: relative;
+                top: 1rem;
+            }
+
+            &__info {
+                display: inline-block;
+                margin-left: 1rem;
+                font-family: $secondary-font;
+            }
         }
     }
 
@@ -95,7 +111,6 @@
 
                     &__name {
                         font-family: $primary-font;
-                        font-size: 1.15rem;
                         font-weight: 500;
                     }
 
@@ -237,5 +252,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        > * {
+            border-radius: 1rem;
+        }
     }
 }

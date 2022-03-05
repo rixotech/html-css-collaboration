@@ -14,8 +14,7 @@
 }
 
 .call_to_action {
-  display: block;
-  width: fit-content;
+  display: inline-block;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: white;
@@ -47,6 +46,20 @@
 }
 .hero__content__call_to_action {
   margin-bottom: 6rem;
+}
+.hero__content__video {
+  display: inline-block;
+}
+.hero__content__video__player {
+  border-radius: 50%;
+  margin-left: 2rem;
+  position: relative;
+  top: 1rem;
+}
+.hero__content__video__info {
+  display: inline-block;
+  margin-left: 1rem;
+  font-family: "Open Sans", sans-serif;
 }
 .hero__banner {
   width: 55%;
@@ -84,7 +97,6 @@
 }
 .hero__banner__overlays__voucher__content__name {
   font-family: "Poppins", sans-serif;
-  font-size: 1.15rem;
   font-weight: 500;
 }
 .hero__banner__overlays__voucher__content__info {
@@ -200,6 +212,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.stats__showcase > * {
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=base.css.map */
