@@ -18,22 +18,34 @@ $primary-font: sans-serif;
 .features {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 
     &__container {
         padding: 8rem 0;
     }
 
     &__icons {
+        width: 50%;
+        position: relative;
+
         &__container {
             box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
             width: fit-content;
             padding: 1rem;
             border-radius: 50%;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &--special {
+                @extend .features__icons__container;
+            }
         }
 
         &__item {
-            width: 75px;
+            width: 48px;
             display: block;
         }
     }

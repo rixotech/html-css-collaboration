@@ -16,19 +16,27 @@
 .features {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 .features__container {
   padding: 8rem 0;
 }
-.features__icons__container {
+.features__icons {
+  width: 50%;
+  position: relative;
+}
+.features__icons__container, .features__icons__container--special {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   width: fit-content;
   padding: 1rem;
   border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .features__icons__item {
-  width: 75px;
+  width: 48px;
   display: block;
 }
 .features__content {
