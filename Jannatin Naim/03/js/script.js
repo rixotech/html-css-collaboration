@@ -1,21 +1,29 @@
-let theta = Math.PI / 3;
-let newTheta = 0;
-let newX = 0;
-let newY = 0;
-let wheelRadius = 150;
+function circularIconsPattern() {
+    let theta = Math.PI / 3;
+    let newTheta = 0;
+    let newX = 0;
+    let newY = 0;
 
-const cards = document.querySelectorAll(".features__icons__container");
+    let wheelRadius = window.innerWidth >= 425 ? 150 : 100;
 
-const center = {
-    x: parseFloat(getComputedStyle(cards[0]).left),
-    y: parseFloat(getComputedStyle(cards[0]).top),
-};
+    const icons = document.querySelectorAll(".features__icons__container");
+    const orientation = document.querySelector(".features__icons__container--orientation");
 
-cards.forEach((card, index) => {
-    newTheta = theta * index;
-    newX = Math.cos(newTheta) * wheelRadius;
-    newY = Math.sin(newTheta) * wheelRadius;
+    const center = {
+        x: parseFloat(getComputedStyle(orientation).left),
+        y: parseFloat(getComputedStyle(orientation).top),
+    };
 
-    card.style.left = center.x + newX + "px";
-    card.style.top = center.y + -1 * newY + "px";
-});
+    icons.forEach((icon, index) => {
+        newTheta = theta * index;
+        newX = Math.cos(newTheta) * wheelRadius;
+        newY = Math.sin(newTheta) * wheelRadius;
+
+        icon.style.left = center.x + newX + "px";
+        icon.style.top = center.y + -1 * newY + "px";
+    });
+}
+
+setInterval(() => {
+    circularIconsPattern();
+}, 100);
