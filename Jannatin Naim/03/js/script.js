@@ -24,6 +24,5 @@ function circularIconsPattern() {
     });
 }
 
-setInterval(() => {
-    circularIconsPattern();
-}, 100);
+circularIconsPattern();
+window.addEventListener("resize", circularIconsPattern);
