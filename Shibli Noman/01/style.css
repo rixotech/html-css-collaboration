@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+:root{
+  --clr-primary: #1D1D1F; 
+  --clr-secondary: #aaaab3; 
+  --clr-third: #FD5B2F;
+  --clr-foruth: rgba(231, 210, 205, 0.788);
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+a {
+    text-decoration: none;
+}
+/* footer section */
+.footer{
+    padding-top: 2rem;
+} 
+.footer .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+/* footer nav */
+.footer-nav{
+    padding-top: 2.5rem;
+}
+.fa-house {
+    font-size: 2.3rem;
+    color: var(--clr-third);
+}
+.logo-text {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--clr-primary);
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.fa-twitter{
+    padding: 9px;
+    background-color: var(--clr-foruth);
+    color: var(--clr-primary);
+    border-radius: 8px;
+}
+.fa-twitter:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.fa-facebook-f{
+    padding: 9px 13px;
+    background-color: var(--clr-foruth);
+    color: var(--clr-primary);
+    border-radius: 8px;
+}
+.fa-facebook-f:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.fa-linkedin-in{
+    padding: 9px 13px;
+    background-color: var(--clr-foruth);
+    color: var(--clr-primary);
+    border-radius: 8px;
+}
+.fa-linkedin-in:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.footer-icon{
+    padding-right: 17px;  
+}
+.footer-icons{
+    padding-top: 3rem;
+}
+
+/* .footer-menu */
+.footer-menu{
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-between;
+}
+.fm-header{
+    padding-bottom: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.fm-header a{
+    color: var(--clr-primary);
+}
+.fm-list{
+    padding-bottom: 10px;
+}
+.fm-list a{
+    color: var(--clr-secondary);
+}
+/* last footer */
+.last-footer{
+    padding-top: 3rem;
+}
+.last-footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.5px solid #dcdcdd;
+}
+.ftr-text{
+    color: var(--clr-secondary);
+    padding-top: 2.5rem;
+}
+.ftr-bn{
+    padding-left: 10px;
+    color: var(--clr-secondary);
+}
+.ftr-btn{
+    padding-top: 2.5rem;
+}
