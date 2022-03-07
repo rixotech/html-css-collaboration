@@ -246,6 +246,7 @@ $primary-font-family: "Roboto", sans-serif;
                 background: rgba(125, 183, 238, 0.295);
                 border-radius: 50%;
                 position: absolute;
+                z-index: -2;
             }
 
             &__rating {
@@ -412,6 +413,117 @@ $primary-font-family: "Roboto", sans-serif;
                     color: #ffffff;
                     border-top-right-radius: 2rem;
                     border-bottom-right-radius: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .features {
+        &__showcase {
+            flex-direction: column;
+
+            &__content {
+                width: 100%;
+                margin-bottom: 4rem;
+            }
+
+            &__banner {
+                width: 100%;
+            }
+        }
+
+        &__pricing {
+            flex-direction: column;
+
+            &__banner {
+                // background: red;
+                width: 100%;
+
+                &__background {
+                    left: 20%;
+                }
+
+                &__rating {
+                    left: 25%;
+                }
+
+                &__cards {
+                    &__item:nth-child(1) {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+
+                    &__item:nth-child(2) {
+                        left: 70%;
+                        transform: translateX(-70%) scale(0.85);
+                    }
+                }
+            }
+
+            &__content {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        &__name {
+            font-size: 3.5rem;
+            margin-bottom: 0;
+        }
+
+        &__showcase {
+            &__banner {
+                &__courses {
+                    top: 2rem;
+                    right: auto;
+                }
+
+                &__discount {
+                    top: 8rem;
+                    bottom: auto;
+                }
+            }
+        }
+
+        &__pricing {
+            &__banner {
+                margin-bottom: 4rem;
+
+                &__background {
+                    width: 300px;
+                    height: 300px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                &__rating {
+                    top: 47%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                &__cards {
+                    padding: 4rem 0;
+
+                    &__item {
+                        margin: 0 auto;
+                    }
+
+                    &__item:nth-child(1) {
+                        position: static;
+                        transform: none;
+                        margin-bottom: 2rem;
+                    }
+
+                    &__item:nth-child(2) {
+                        position: static;
+                        transform: none;
+                    }
                 }
             }
         }
