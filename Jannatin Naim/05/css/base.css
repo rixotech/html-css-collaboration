@@ -80,6 +80,7 @@
 .testimonials__reviews {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .testimonials__reviews__content {
   width: 50%;

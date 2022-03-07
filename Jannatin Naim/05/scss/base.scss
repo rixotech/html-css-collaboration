@@ -106,6 +106,7 @@ $primary-font-family: "Roboto", sans-serif;
     &__reviews {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         &__content {
             width: 50%;
