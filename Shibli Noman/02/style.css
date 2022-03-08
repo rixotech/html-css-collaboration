@@ -6,143 +6,303 @@
     font-family: 'inter', sans-serif;
 }
 :root{
-    ---clr-primary: rgb(66, 66, 66);
+    ---clr-primary: rgb(70, 70, 71);
     ---clr-secondary: rgb(102, 71, 243);
-    ---clr-border: rgb(207, 207, 207);
+    ---clr-third: rgb(128, 128, 128);
+    ---clr-border: rgb(194, 194, 194);
+}
+:root{
+    ---font-size-first: 4rem;
+    ---font-size-second: 2rem;
+    ---font-size-third: 1.5rem;
+}
+@media (max-width:900px) {
+    :root{
+        ---font-size-first: 2rem;
+        ---font-size-second: 1.5rem;
+        ---font-size-third: 1rem;
+    }
+    .fa-check{
+        padding-right: 1rem;
+    }
+    .button-thrird-text{
+        font-weight: normal;
+        font-size: 6px;
+    }
+    .button-one-text{
+       font-weight: normal;
+       font-size: 6px;
+    }
+    .button-two-text{
+       font-weight: normal;
+       font-size: 6px;
+    }
 }
 /* simpale style */
 .container{
     width: 90%;
     margin: 0 auto;
+    padding-top: 2rem;
 }
 a{
     text-decoration: none;
 }
-/* pricing header */
-.pricing-hed {
-    padding-top: 3rem;
-}
-.pricing-hed .item{
-   display: grid;
-   grid-template-columns: 1.5fr 1.5fr;
-}
-.pricing-hed-desc{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 2rem; 
-}
-.pricing-header{
-    font-size: 3rem;
+/* ===>pricing hed<=== */
+/*> element <*/
+.pricing-hed-tittle{
+    font-size: var(---font-size-first);
     color: var(---clr-primary);
+    padding-top: 15px;
 }
-.price-desc-header{
-    font-size: 1.5rem;
+.price-tittle{
+    font-size: var(---font-size-third);
     font-weight: 700;
     color: var(---clr-primary);
-    padding-top: 1rem;
+    padding-bottom: 5px;
+    text-align: center;
 }
-.price-desc-number{
-    font-size: 2rem;
-    font-weight: 700;
+.price-number{
+    font-size: var(---font-size-second);
+    font-weight: 800;
     color: var(---clr-secondary);
-    padding-top: 1rem;
+    padding-bottom: 5px;
     text-align: center;
 }
-.valadity{
-    padding-top: 1rem;
-    color: var(---clr-primary);
+.pricing-duration{
+    color: var(---clr-third);
     text-align: center;
+    padding-bottom: 5px;
+    
 }
-/* === pricing table=== */
-
-.pricing-table{
+/* > element end < */
+/* > section < */
+.pricing-hed-item{
     display: grid;
-    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-columns: repeat(12, 1fr);
 }
-.pricing-table-desc{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 160px;
-    padding-right: 2rem; 
+.pricing-hed-main{
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
-.pricing-table-tittle{
-    padding-bottom: 1rem; 
+.pricing-price-first{
+    grid-column-start: 7;
+    grid-column-end: 8;
 }
-.pricing-table-icons{
-    padding-bottom: 1rem;
+.pricing-price-Second{
+    grid-column-start: 9;
+    grid-column-end: 10;
 }
-.pricing-table{
-    border-bottom: 1px solid var(---clr-border);
-    padding-top: 1rem;
+.pricing-price-Third{
+    grid-column-start: 11;
+    grid-column-end: 12;
 }
-.table-pricing{
-    padding-top: 1rem;
+/* > section end < */
+/* ===>pricing hed end<=== */
+/* element */
+.tittle-text{
+    color: var(---clr-third);
 }
 .fa-check{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(---clr-secondary);
+    padding-left: 2.3rem;
 }
-/* === second === */
+/* element end */
+/* section */
+.pricing-table-first{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 1px solid var(---clr-border);
+    padding: 9px 0px;
+}
+ .pricing-table-tittle{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.pricing-table-icon-1{
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+.pricing-table-icon-2{
+    grid-column-start: 9;
+    grid-column-end: 10; 
+}
+.pricing-table-icon-3{
+    grid-column-start: 11;
+    grid-column-end: 12;
+} 
+/* second */
 .pricing-table-second{
     display: grid;
-    grid-template-columns: 1.5fr 1.5fr;
-}
-.pricing-table-desc-sc{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 1rem;
-    gap: 150px;
-    padding-left: 13rem;
-}
-.pricing-table-second{
+    grid-template-columns: repeat(12, 1fr);
     border-bottom: 1px solid var(---clr-border);
-    padding-top: 1rem;
-}
-.pricing-table-third{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 4rem;
-}
-.pricing-table-third{
-    border-bottom: 1px solid var(---clr-border);
-    padding-top: 1rem;
+    padding: 9px 0px;
 }
 .pricing-table-tittle{
-    color: var(---clr-primary);
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
-.pricing-table-trd{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1rem;
+.pricing-table-icon-4{
+    grid-column-start: 7;
+    grid-column-end: 8;
 }
-.pricing-table-desc-thr{
-    padding-right: 4rem;
+.pricing-table-icon-5{
+    grid-column-start: 9;
+    grid-column-end: 10; 
 }
-/* btn */
-.pricing-btn{
-    padding-top: 1.5rem;
-    padding-bottom: 4rem;
+.pricing-table-icon-6{
+    grid-column-start: 11;
+    grid-column-end: 12;
 }
-.btn-item{
-    float: right;
-    display: flex;
-    gap: 9rem;
-    padding-right: 2rem;
+/* third */
+.pricing-table-third{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 1px solid var(---clr-border);
+    padding: 9px 0px;
 }
-.text{
-    font-size: 1rem;
-    font-weight: 900;
-    color: var(---clr-secondary);
+.pricing-table-tittle{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
-.txt{
-    padding: 5px 20px 5px 20px;
-    border-radius: 20px;
+.pricing-table-icon-7{
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+.pricing-table-icon-8{
+    grid-column-start: 9;
+    grid-column-end: 10; 
+}
+.pricing-table-icon-9{
+    grid-column-start: 11;
+    grid-column-end: 12;
+}
+/* fourth */
+.pricing-table-fourth{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 1px solid var(---clr-border);
+    padding: 9px 0px;
+}
+.pricing-table-tittle{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.pricing-table-icon-10{
+    grid-column-start: 9;
+    grid-column-end: 10; 
+}
+.pricing-table-icon-11{
+    grid-column-start: 11;
+    grid-column-end: 12;
+}
+/* five */
+.pricing-table-five{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 1px solid var(---clr-border);
+    padding: 9px 0px;
+}
+.pricing-table-tittle{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.pricing-table-icon-12{
+    grid-column-start: 9;
+    grid-column-end: 10; 
+}
+.pricing-table-icon-13{
+    grid-column-start: 11;
+    grid-column-end: 12;
+}
+/* six */
+.pricing-table-six{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 1px solid var(---clr-border);
+    padding: 9px 0px;
+}
+.pricing-table-tittle{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.pricing-table-icon-14{
+    grid-column-start: 9;
+    grid-column-end: 10; 
+}
+.pricing-table-icon-15{
+    grid-column-start: 11;
+    grid-column-end: 12;
+}
+/* seven */
+.pricing-table-seven{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 1px solid var(---clr-border);
+    padding: 9px 0px;
+}
+.pricing-table-tittle{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.pricing-table-icon-16{
+    grid-column-start: 11;
+    grid-column-end: 12;
+}
+/* eight */
+.pricing-table-eight{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 9px 0px;
+}
+.pricing-table-tittle{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.pricing-table-icon-17{
+    grid-column-start: 11;
+    grid-column-end: 12;
+}
+/* section end */
+/* ===>Pricing table end<=== */
+/* ===>button<=== */
+.pricing-button{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.button-one{
+    grid-column-start: 4;
+    padding: 5px 0px;
+}
+.button-two{
+    grid-column-start: 5;
+    padding: 5px 0px;
+}
+.button-third{
+    grid-column-start: 6;  
+}
+/* button element */
+.button-thrird-text{
     color: white;
+    padding: 5px 25px;
+    border-radius: 13px;
     background-color: var(---clr-secondary);
+    font-weight: 800;
 }
+.button-one-text{
+    color: var(---clr-secondary);
+    padding: 5px 25px;
+    border-radius: 13px;
+    font-weight: 800;
+}
+.button-two-text{
+    color: var(---clr-secondary);
+    padding: 5px 25px;
+    border-radius: 13px;
+    font-weight: 800;
+}
+/* ===>button end<=== */
 
