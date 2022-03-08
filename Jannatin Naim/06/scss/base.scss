@@ -1,0 +1,52 @@
+$primary-color: hsl(200, 70%, 68%);
+$secondary-color: hsl(10, 100%, 60%);
+
+$primary-font: sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__container {
+        padding: 2rem 0;
+    }
+
+    &__brand {
+        display: flex;
+        flex-direction: column;
+
+        &__name {
+            font-size: 2rem;
+            font-family: $primary-font;
+            font-weight: 700;
+        }
+
+        &__info {
+            font-family: $primary-font;
+            font-weight: 700;
+            color: $primary-color;
+        }
+    }
+
+    &__navigation {
+        &__toggle {
+            display: block;
+            width: 48px;
+        }
+    }
+}

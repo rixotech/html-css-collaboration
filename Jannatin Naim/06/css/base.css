@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_header__container {
+  padding: 2rem 0;
+}
+.main_header__brand {
+  display: flex;
+  flex-direction: column;
+}
+.main_header__brand__name {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.main_header__brand__info {
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #74c0e7;
+}
+.main_header__navigation__toggle {
+  display: block;
+  width: 48px;
+}
+
+/*# sourceMappingURL=base.css.map */
