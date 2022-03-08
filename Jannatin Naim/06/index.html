@@ -6,9 +6,13 @@
 
         <link rel="stylesheet" href="./css/base.css" />
 
+        <script src="./js/script.js" defer></script>
+
         <title>Page Header | Mobile</title>
     </head>
     <body>
+        <div class="backdrop"></div>
+
         <div class="main_header__container">
             <header class="main_header container">
                 <div class="main_header__brand">
@@ -23,6 +27,44 @@
                         alt="PlaceHolder"
                         class="main_header__navigation__toggle"
                     />
+
+                    <ul class="main_header__navigation__list">
+                        <li class="main_header__navigation__list__item">
+                            <a href="#" class="main_header__navigation__list__item__link">About</a>
+                        </li>
+                        <!-- .main_header__navigation__list__item -->
+
+                        <li class="main_header__navigation__list__item">
+                            <a href="#" class="main_header__navigation__list__item__link">Courses</a>
+                        </li>
+                        <!-- .main_header__navigation__list__item -->
+
+                        <li class="main_header__navigation__list__item">
+                            <a href="#" class="main_header__navigation__list__item__link">Teachers</a>
+                        </li>
+                        <!-- .main_header__navigation__list__item -->
+
+                        <li class="main_header__navigation__list__item">
+                            <a href="#" class="main_header__navigation__list__item__link">Pricing</a>
+                        </li>
+                        <!-- .main_header__navigation__list__item -->
+                    </ul>
+
+                    <div class="main_header__user_auth">
+                        <a class="main_header__user_auth__login" href="#">
+                            <img
+                                src="https://via.placeholder.com/48/"
+                                alt="PlaceHolder"
+                                class="main_header__user_auth__login__icon"
+                            />
+
+                            <span class="main_header__user_auth__login">Log In</span>
+                        </a>
+                        <!-- .main_header__user_auth__login -->
+
+                        <a class="main_header__user_auth__sign_up" href="#">Sign Up</a>
+                    </div>
+                    <!-- .main_header__user_auth -->
                 </nav>
                 <!-- .main_header__navigation -->
             </header>
