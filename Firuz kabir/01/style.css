@@ -1,0 +1,75 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  position: absolute;
+}
+.container{
+  width: 1170px;
+  height: auto;
+  margin-left: 130px;
+  margin-top: 50px;
+}
+.services-header h1{
+  text-align: center;
+  font-size: 40px;
+  margin-left: 130px;
+}
+.services-header p{
+  text-align: center;
+  margin-left: 150px;
+  line-height: 25px;
+}
+.services-body{
+  display: flex;
+  justify-content: center;
+}
+.card-main{
+  width: 300px;
+  height: auto;
+  margin-left: 25px;
+  margin-top: 150px;
+  border-radius: 10px;
+  background: rgb(236, 234, 236);
+  transition: 0.4s;
+}
+.card-main:hover{
+  box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.card img{
+  width: auto;
+  height: 200px;
+  position: relative;
+  bottom: 110px;
+  margin-bottom: -90px;
+  left: 50px;
+  border-radius: 10px;
+}
+.card h2, p{
+  text-align: center;
+  line-height: 5px;
+}
+.card p{
+  font-size: 14px;
+  color: gray;
+}
+.card-footer{
+  text-align: center;
+}
+.card-footer .fa-brands{
+  padding: 20px 10px;
+  font-size: 25px;
+  color:rgb(177, 171, 177) ;
+  transition: 0.4s;
+}
+.card-footer .fa-brands:hover{
+  color: orange;
+}
+
+/* ====Media section==== */
+
+.card{
+  display: block;
+}
