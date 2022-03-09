@@ -11,6 +11,7 @@
     ---clr--third: rgb(233, 121, 17);
     ---clr-fourth: rgb(97, 97, 97);
     ---clr--five: rgb(163, 145, 145);
+    ---clr-six: rgba(207, 209, 211, 0.774);
 }
 :root{
     ---fonts--primary:8rem;
@@ -39,7 +40,13 @@
     height: 80vh;
     background-color: var(---clr--primary);
     margin: 0 auto;
+    border-radius: 15px;
 }
+.box:hover{
+    transform: scale(1.01);
+    transition: all 0.1s ease;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
 .row{
     display: flex;
     justify-content: space-between;
