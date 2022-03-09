@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-font: 'Roboto', sans-serif;
+}
+body {
+  font-family: var(--primary-font);
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.about {
+  margin-top: 150px;
+  text-align: center;
+}
+.about .about__mini__heading {
+  text-transform: uppercase;
+  color: #dca3b1;
+  font-size: 14px;
+}
+.about .about__heading {
+  margin-top: 5px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #474e57;
+  text-transform: capitalize;
+}
+.about .about__text {
+  margin-top: 10px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 14px;
+  color: #696666;
+}
+.review__no {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  padding: 90px;
+}
+.item h2 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.item p {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #696666;
+  text-align: center;
+}
+.item .sign {
+  color: #2c87e1;
+  font-weight: 500;
+}
+@media all and (max-width: 668px) {
+  .review__no {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .item {
+    padding: 50px;
+  }
+}
