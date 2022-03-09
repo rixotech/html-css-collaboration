@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+:root{
+    ---clr--primary: rgba(3, 54, 58, 0.904);
+    ---clr--secondary: rgba(189, 156, 8, 0.856);
+    ---clr--third: rgb(233, 121, 17);
+    ---clr-fourth: rgb(97, 97, 97);
+    ---clr--five: rgb(163, 145, 145);
+}
+:root{
+    ---fonts--primary:8rem;
+    ---fonts--secondary: 3rem;
+    ---fonts--thirds: 2rem;
+    ---fonts-fourth: 1.5rem;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* genarel end */
+/* content start */
+.main-box{
+    padding-top: 3rem;
+}
+.main-box-desc{
+    padding-top: 1rem;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80vh;
+    background-color: var(---clr--primary);
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.first-col{
+    display: flex;
+    gap: 10px;
+}
+.second-col{
+    display: flex;
+    gap: 10px;
+}
+.fa-bullseye{
+    font-size: var(---fonts--primary);
+    color: var(---clr--secondary);
+}
+.text{
+    font-size: var(---fonts--secondary);
+    color: white;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.fa-sun{
+    font-size: var(---fonts--thirds);
+    color: var(---clr--third);
+}
+.in-s-text{
+    font-size: var(---fonts-fourth);
+    font-weight: 600;
+    color: var(---clr-fourth);
+    padding-right: 3px;
+}
+.inner-title{
+    font-size: var(---fonts-fourth);
+    font-weight: 600;
+   
+}
+.button{
+    font-size: var(---fonts-fourth);
+    font-weight: 600;
+    color: white;
+    background-color: var(---clr--five);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0px 3px;
+    text-decoration: none;
+}
+.fa-heart{
+    font-size: var(---fonts-fourth);
+    color: var(---clr-fourth);
+}
+.fa-eye{
+    font-size: var(---fonts-fourth);
+    color: var(---clr-fourth);
+}
+@media (max-width: 580px){
+    :root{
+        ---fonts--primary:6rem;
+        ---fonts--secondary: 2rem;
+        ---fonts--thirds: 1rem;
+        ---fonts-fourth: 0.8rem;
+    }
+}
