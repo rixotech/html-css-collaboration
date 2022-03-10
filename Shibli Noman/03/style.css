@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+    --card-size: 350px;
+}
+
+*, *::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    ---clr--primary: rgb(172, 169, 169);
+    ---clr--secondary: rgb(238, 94, 11);
+    ---clr--third: rgb(20, 19, 19);
+    ---clr--fourth: rgb(214, 189, 189);
+    ---clr--five: rgb(56, 55, 55);
+}
+img{
+    max-width: 100%;
+}
+
+
+/* Boxes Section */
+.boxes{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.box{
+    width: 100%;
+    max-width: var(--card-size);
+    height: var(--card-size);
+}
+.box_media{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: .5rem;
+    background-color: #000000;
+}
+.box_media img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s ease-out;
+}
+.box:hover .box_media::before{
+    opacity: 1;
+}
+.box:hover .box_media img{
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+.box_desc .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 8px;
+}
+.first-col,
+.second-col{
+    display: flex;
+    gap: 10px;
+}
+.icon-text{
+    display: inline-flex;
+}
+.icon-text > * + *{
+    margin-left: 10px;
+}
+.inner-title{
+    font-size: 1rem;
+    color: var(---clr--third);
+    font-weight: 600;
+    padding-top: 3px;
+}
+.fa-sun{
+    font-size: 1.5rem;
+    color: var(---clr--secondary);
+    font-weight: 600;
+}
+.button{
+    color: white;
+    background-color: var(---clr--fourth);
+    font-size: 1rem;
+    padding: 2px 3px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.fa-heart, 
+.fa-eye{
+    color: var(---clr--primary);
+}
+.in-s-text{
+    font-size: 1rem;
+    color: var(---clr--five);
+    font-weight: 600;
+}
