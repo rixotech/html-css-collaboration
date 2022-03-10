@@ -14,6 +14,7 @@
     ---clr--third: rgb(20, 19, 19);
     ---clr--fourth: rgb(214, 189, 189);
     ---clr--five: rgb(56, 55, 55);
+    ---clr--six: rgb(194, 42, 42);
 }
 img{
     max-width: 100%;
@@ -94,6 +95,15 @@ img{
 .fa-heart, 
 .fa-eye{
     color: var(---clr--primary);
+    transition: all .5s ease-out;
+}
+.fa-heart:hover{
+    color: var(---clr--six);
+    transform: scale(1.2);
+} 
+.fa-eye:hover{
+    color: var(---clr--third);
+    transform: scale(1.2);
 }
 .in-s-text{
     font-size: 1rem;
