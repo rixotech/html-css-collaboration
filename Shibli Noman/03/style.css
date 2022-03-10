@@ -57,6 +57,7 @@ img{
 .box_desc .row{
     display: flex;
     justify-content: space-between;
+    align-items: center; 
     padding: 15px 8px;
 }
 .first-col,
