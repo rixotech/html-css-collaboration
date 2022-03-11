@@ -17,25 +17,28 @@
     margin: 0 auto;
 }
 :root{
-    ---clr--primary: rgba(228, 125, 84, 0.027);
+    ---clr--primary: rgba(228, 125, 84, 0.034);
     ---clr--secondary: rgb(238, 94, 11);
     ---clr--third: rgb(20, 19, 19);
     ---clr--fourth: rgb(59, 59, 59);
     ---clr--five: rgba(236, 131, 82, 0.212);
-    ---clr--six: rgb(212, 212, 212);
+    ---clr--six: rgba(212, 212, 212, 0.384);
     ---clr--box: #fff;
 }
 .descreption{
     padding-top: 2rem;
+    background-color: var(---clr--primary);
 }
 .descreption-hed{
     text-align: center;
     font-size: 3.2rem;
     color: var(---clr--third);
+    padding-bottom: 1rem;
 }
 .descreption-desc{
     text-align: center;
     color: var(---clr--fourth);
+    padding-bottom: 0.2rem;
 }
 .row{
     display: inline-flex;
@@ -49,6 +52,7 @@
     height: 40vh;
     max-width: 350px;
     border: 1px solid var(---clr--six);
+    border-radius: 9px;
     padding: 10px 10px;
     transition: all .1s ease-out;
 }
@@ -70,10 +74,7 @@ i{
     padding: 5px 10px;
 }
 .col:hover{
-    transform: scale(1.01);
     background-color: #fff;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.048);
-}
-.descreption{
-    background-color: var(---clr--primary);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: none;
 }
