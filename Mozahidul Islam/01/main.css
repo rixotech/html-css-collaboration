@@ -6,7 +6,6 @@
   font-family: "Fredoka", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-family: "Quicksand", sans-serif;
-  box-sizing: border-box;
 }
 
 .container {
@@ -19,6 +18,7 @@
 .feature {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -40,15 +40,35 @@
   text-align: center;
   margin: auto 0;
   background-color: #fff;
+  position: relative;
+}
+
+.btn::before,
+.btn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+.btn::before {
+  transform: rotate(5deg);
+  border: 1px solid rgba(128, 128, 128, 0.564);
+}
+.btn::after {
+  transform: rotate(-5deg);
+  border: 1px solid rgba(128, 128, 128, 0.565);
 }
 
 button {
-  padding: 15px;
-  border: 1px solid gray;
-  border-radius: 30px;
+  padding: 10px 20px;
   background-color: #fff;
   color: #28b5ff;
   font-size: 15px;
+  border: none;
   font-weight: 500;
 }
 
@@ -56,36 +76,49 @@ button:hover {
   cursor: pointer;
 }
 
+/* Start */
 .feature {
   display: flex;
   margin-top: 200px;
+  gap: 30px;
 }
 
-.faster,
-.cheaper,
-.at_hand {
+.feature__item {
   display: flex;
-  padding: 15px;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
 }
-i {
+.feature__item::before,
+.feature__item::after {
+  content: "";
   width: 100%;
-  padding: 20px 20px 20px 0px;
-  color: #00d9ff;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1rem;
+  transition: all 0.4s ease-out;
 }
-
-.faster:hover,
-.cheaper:hover,
-.at_hand:hover {
-  border: 1px solid gray;
-  border-radius: 20px;
-  cursor: pointer;
+.feature__item::before {
+  padding: 0.5rem;
+  top: -10px;
+  left: -0.5rem;
+  border: 1px solid transparent;
 }
-
-.faster_title,
-.cheaper_title,
-.hand_title {
-  font-size: 32px;
-  font-weight: 800;
+.feature__item::after {
+  transform: rotate(0deg);
   text-align: center;
-  margin: auto 0;
+  border: 1px solid transparent;
+  top: 10px;
+}
+.feature__item:hover::after,
+.feature__item:hover::before {
+  border-color: #c9d2d6;
+}
+.feature__item__icon i {
+  font-size: 3.5rem;
+  color: #28b5ff;
+  margin-right: 10px;
 }
