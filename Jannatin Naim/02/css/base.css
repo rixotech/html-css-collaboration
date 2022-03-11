@@ -30,18 +30,10 @@
   padding: 2rem 0;
 }
 .main_header__brand {
-  display: flex;
-  flex-direction: column;
+  width: 15%;
 }
-.main_header__brand__name {
-  font-size: 2rem;
-  font-family: sans-serif;
-  font-weight: 700;
-}
-.main_header__brand__info {
-  font-family: sans-serif;
-  font-weight: 700;
-  color: #74c0e7;
+.main_header__brand__logo {
+  width: 100%;
 }
 .main_header__navigation__list {
   list-style: none;
@@ -57,11 +49,14 @@
   display: block;
   padding: 0 0.75rem;
 }
+.main_header__navigation__list__item__link:hover, .main_header__navigation__list__item--special__link:hover {
+  color: #32308d;
+}
 .main_header__navigation__list__item__link:hover::before, .main_header__navigation__list__item--special__link:hover::before {
   content: "";
   height: 2px;
   position: absolute;
-  background: linear-gradient(to right, rgba(137, 17, 235, 0.2), #8911eb, rgba(137, 17, 235, 0.2));
+  background: linear-gradient(to right, rgba(50, 48, 141, 0.2), #32308d, rgba(50, 48, 141, 0.2));
   border-radius: 50%;
   left: 50%;
   bottom: -0.2rem;
@@ -79,7 +74,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -0.25rem;
-  background: #8911eb;
+  background: #32308d;
 }
 .main_header__navigation__list__item--special {
   margin-left: 2rem;
@@ -91,6 +86,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  color: #000;
+  padding: 0;
 }
 .main_header__navigation__list__item--special__link__name {
   display: inline-block;
@@ -105,6 +102,24 @@
 .main_header__navigation__list__item--special__link:hover::before {
   display: none;
 }
+.main_header__navigation__list__item--special__link:hover::after {
+  display: none;
+}
+.main_header__navigation__list__item--active a {
+  position: relative;
+  color: #32308d;
+}
+.main_header__navigation__list__item--active a::after {
+  content: "";
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.25rem;
+  background: #32308d;
+}
 .main_header__user_auth {
   display: flex;
   gap: 1rem;
@@ -116,6 +131,10 @@
   font-family: sans-serif;
   border-bottom: 2px solid #74c0e7;
   padding-bottom: 0.2rem;
+  transition: all 0.3s ease;
+}
+.main_header__user_auth__login:hover {
+  color: #74c0e7;
 }
 .main_header__user_auth__sign_up {
   text-decoration: none;
@@ -124,6 +143,10 @@
   background: #74c0e7;
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+.main_header__user_auth__sign_up:hover {
+  background: #1d78a5;
 }
 
 @media (max-width: 1024px) {
