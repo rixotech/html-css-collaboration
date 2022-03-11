@@ -14,7 +14,7 @@
   margin: 0 auto;
 }
 :root {
-  ---clr--primary: rgba(228, 125, 84, 0.034);
+  ---clr--primary: rgba(228, 125, 84, 0.037);
   ---clr--secondary: rgb(238, 94, 11);
   ---clr--third: rgb(20, 19, 19);
   ---clr--fourth: rgb(59, 59, 59);
