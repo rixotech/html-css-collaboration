@@ -35,9 +35,11 @@
   width: 200px;
   height: 280px;
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
 .col:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
 }
 .fa-x {
   float: right;
