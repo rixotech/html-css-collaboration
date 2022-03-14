@@ -10,12 +10,12 @@
 
 .body {
   background: #fff0f0;
+  padding: 1rem;
 }
 
 .body .container-header {
-  margin-top: 0.6rem;
+  margin-top: 2rem;
   margin: 0 auto;
-  padding: 2rem;
   max-width: 100%;
   text-align: center;
 }
@@ -38,7 +38,6 @@
 
 .body .container {
   margin-top: 2rem;
-  padding: 0 4rem;
   margin: 3rem auto;
   display: grid;
   display: -ms-grid;
@@ -60,8 +59,10 @@
   position: absolute;
   top: -0.3%;
   right: -5%;
-  width: 19.375rem;
-  height: 19.375rem;
+  min-width: 19.375rem;
+  max-width: 100%;
+  min-height: 19.375rem;
+  max-height: 4vh;
   border-radius: 10px;
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
@@ -96,5 +97,17 @@
   line-height: 1.33rem;
   max-width: 12.5rem;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .body .container {
+    grid-auto-flow: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .body .container {
+    grid-auto-flow: row;
+  }
 }
 /*# sourceMappingURL=main.css.map */
