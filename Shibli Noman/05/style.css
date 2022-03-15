@@ -32,25 +32,22 @@
   background-color: var(---clr--fourth);
 }
 .col {
-  width: 200px;
+  width: 240px;
   height: 280px;
   border-radius: 10px;
   transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 .col:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   cursor: pointer;
 }
-.fa-x {
-  float: right;
-  margin: 20px;
-  font-size: 15px;
-  color: var(---clr--first);
-  transition: all 0.1s ease-out;
+.col .icon i {
+  transition: transform 0.3s ease;
 }
-.fa-x:hover {
-  transform: scale(1.4);
-  cursor: pointer;
+.col:hover .icon i {
+  transform: scale(1.125);
 }
 .fa-video {
   color: var(---clr--first);
@@ -81,4 +78,26 @@
   color: var(---clr--second);
   padding-left: 1.5rem;
   font-weight: 500;
+}
+.xi .fa-x {
+  color: var(---clr--first);
+  float: right;
+  margin: 20px;
+  font-size: 15px;
+  transition: all 0.1s ease-out;
+}
+.x .fa-x {
+  color: var(---clr--second) !important;
+  float: right;
+  margin: 20px;
+  font-size: 15px;
+  transition: all 0.1s ease-out;
+}
+.fa-x:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.705);
+}
+.x .fa-x:hover {
+  color: rgba(255, 0, 0, 0.705) !important;
 }
