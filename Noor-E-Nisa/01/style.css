@@ -1,26 +1,28 @@
 body{
     margin: 0;
     padding: 0;
-    max-width: 100%;
     font-family: 'Roboto', sans-serif;
+
 }
 .property-header{
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 3fr 3fr 2fr;
+    
 }
 
 .property-header h2{
-    margin-left: 170px;
     margin-top: 40px;
+    margin-left: 160px;
     color: #101047;
 }
 .arrows{
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-left: 80px;
 }
 a{
     text-decoration: none;
 }
-img{
+.building-img{
     border-radius: 10px;
     padding: 5px;
 }
@@ -29,29 +31,28 @@ img{
     color: black;
     padding: 10px;
     font-size: 12px;
-    border-radius: 50%;
+    border-radius: 70%;
 }
 
 .container{
     display: flex;
-    gap: 20px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .box{
     display: flex;
     border-radius: 10px;
+    border: 1px solid #f2f2f2;
 }
 .box h4{
     color: #101047;
 
 }
-#box2{
+
+.box:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
-}
-#box1, #box3{
-    border: 1px solid #f2f2f2;
 }
 
 .text{
@@ -61,31 +62,164 @@ img{
     color: #696969;
 
 }
+@media(max-width: 350px){
+    .property-header h2{
+        position: relative;
+        left: 20px;
+    }
+    .arrows{
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        position: relative;
+        right: 20px;
+    }
+    
+    .symbol i{
+        padding-top: 10px;
+    }
+   
+    .container{
+        overflow: visible;
+    }
+
+    .box{
+        position: relative;
+        right: 40px;
+    }
+
+}
 
 
 @media screen and (max-width: 400px) {
     *{
-        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .property-header{
+        display: flex;
+        
+              
+    }
+    .property-header h2{
+        margin-left: 10px;
+    }
+    .container{
+        display: inline-flex;
+        margin-left: 60px;
+    }
+    .arrows{
+        overflow-x: visible;
+    }
+    .box{
+        max-width: 250px;
+        margin-left: 30px;
+    }
+   
+} 
+
+@media (min-width: 640px) {
+    *{
+        overflow-x: hidden;
+
+    }
+
+    .container{
+        display: inline-flex;
+        margin-left: 40px;
+        gap: 20px;
     }
     .property-header{
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 3fr 1fr 2fr;
+    }
+    .arrows{
+        overflow-x: visible;
+        margin-right: 0px;
     }
 
     .property-header h2{
         margin-left: 50px;
-       
-    }
-     
-    .container{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
     }
     .box{
-       width: 80%;
-       box-sizing: border-box;
+        min-width: 350px;
+        height: 150px;
+        margin-left: 80px ;
+        margin-right: 80px;
     }
+
+    
+}
+/* md */
+@media (min-width: 768px) {
+    *{
+        overflow-x: hidden;
+    }
+    .property-header{
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+    }
+
+    .container{
+        display: inline-flex;
+        justify-content: space-around;
+        gap: 40px;
+        margin-right: 40px;
+    }
+    .box{
+        min-width: 450px;
+        margin-left: 150px;
+        margin-right: 190px;
+    }
+    .arrows{
+        margin-left: 200px;
+    }
+   
+    
+}
+/* lg */
+@media (min-width: 1024px) {
+
+    .property-header{
+        display: grid;
+        grid-template-columns: 2fr 3fr 2fr;
+    }
+    
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        gap: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+
+      
+    }
+    .container >*{
+        flex: 1;
+    }
+    
+    .box{
+        min-width: 200px;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+   
+}
+/* xl */
+@media (min-width: 1280px) {
+    .arrows{
+        margin-left: 250px;
+    }
+     
+}
+/* 2xl */
+@media (min-width: 1536px) {
+    .arrows{
+        margin-left: 320px;
+    }
+
 }
