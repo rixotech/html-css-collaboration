@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+:root {
+  ---clr--first: rgba(33, 0, 179, 0.658);
+  ---clr--second: rgb(139, 99, 23);
+  ---clr--third: rgba(33, 0, 179, 0.082);
+  ---clr--fourth: rgba(138, 90, 2, 0.089);
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.action-to-go {
+  padding-top: 3rem;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.col-first {
+  background-color: var(---clr--third);
+}
+.col-second {
+  background-color: var(---clr--fourth);
+}
+.col {
+  width: 240px;
+  height: 280px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.col:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+.col .icon i {
+  transition: transform 0.3s ease;
+}
+.col:hover .icon i {
+  transform: scale(1.125);
+}
+.fa-video {
+  color: var(---clr--first);
+  font-size: 2rem;
+  padding: 6rem 0rem 1rem 1.5rem;
+}
+.col-titel {
+  color: var(---clr--first);
+  font-size: 1.5rem;
+  padding: 1.5rem 0rem 0.5rem 1.5rem;
+}
+.col-desc {
+  color: var(---clr--first);
+  padding-left: 1.5rem;
+  font-weight: 500;
+}
+.fa-camera {
+  color: var(---clr--second);
+  font-size: 2rem;
+  padding: 6rem 0rem 1rem 1.5rem;
+}
+.col-titel-s {
+  color: var(---clr--second);
+  font-size: 1.5rem;
+  padding: 1.5rem 0rem 0.5rem 1.5rem;
+}
+.col-desc-s {
+  color: var(---clr--second);
+  padding-left: 1.5rem;
+  font-weight: 500;
+}
+.xi .fa-x {
+  color: var(---clr--first);
+  float: right;
+  margin: 20px;
+  font-size: 15px;
+  transition: all 0.1s ease-out;
+}
+.x .fa-x {
+  color: var(---clr--second) !important;
+  float: right;
+  margin: 20px;
+  font-size: 15px;
+  transition: all 0.1s ease-out;
+}
+.fa-x:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.705);
+}
+.x .fa-x:hover {
+  color: rgba(255, 0, 0, 0.705) !important;
+}

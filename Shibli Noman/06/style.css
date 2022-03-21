@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* universal */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+:root {
+  ---clr-background: rgba(0, 0, 0, 0.017);
+  ---clr-primary: rgb(71, 9, 185);
+  ---clr-second-background: rgba(92, 8, 248, 0.055);
+  ---clr-second: rgba(8, 252, 240, 0.664);
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+image {
+  width: 100%;
+}
+.card {
+  padding-top: 2rem;
+  background-color: var(---clr-background);
+}
+.card-item {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.card-main-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin: 15px 0px 10px 15px;
+}
+.card-main {
+  background-color: var(---clr-second-background);
+  width: 290px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.card-main:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+.fa-pause {
+  float: right;
+  margin: 20px 25px;
+  padding: 10px;
+  background-color: var(---clr-primary);
+  color: #fff;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+.main-card-header {
+  margin: 15px 0px 8px 15px;
+  color: rgba(0, 0, 0, 0.849);
+}
+.main-card-desc {
+  margin: 5px 0px 8px 15px;
+  padding-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.582);
+}
+.card-ordinary {
+  position: relative;
+  width: 200px;
+  height: 231px;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  border-radius: 8px;
+}
+.card-ordinary:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+.fa-calendar {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: #ffff;
+  background-color: var(---clr-second);
+}
+.card-ordinary-hed {
+  color: rgba(0, 0, 0, 0.795);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 5px;
+}
+.card-ordinary-desc {
+  color: rgba(0, 0, 0, 0.795);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+.fa-plus {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: #ffff;
+  background-color: var(---clr-second);
+}
+@media (max-width: 640px) {
+  .card-item {
+    flex-direction: column;
+  }
+}
