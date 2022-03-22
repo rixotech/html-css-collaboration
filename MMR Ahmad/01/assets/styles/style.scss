@@ -22,6 +22,13 @@ body{
     margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+    .container{
+        width: 90%;
+        max-width: unset;
+    }
+}
+
 .events{
     padding: 25px 10px;
     // Header
@@ -90,7 +97,7 @@ body{
                 flex-grow: 2;
                 h5{
                     color: #000;
-                    font-size: 1.5rem;
+                    font-size: calc(1rem + 0.5vw);
                 }
             }
             &__time{}
