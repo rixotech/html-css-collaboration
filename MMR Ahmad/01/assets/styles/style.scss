@@ -44,6 +44,7 @@ body{
             & > * {
                 width: .75rem;
                 opacity: .75;
+                cursor: pointer;
                 transition: opacity .3s ease;
                 &:hover{
                     opacity: 1;
@@ -60,6 +61,8 @@ body{
         & .col p{
             display: flex;
             flex-direction: column;
+            text-transform: uppercase;
+            cursor: pointer;
             & > span + span{
                 color: #000;
                 font-weight: 600;
@@ -85,7 +88,15 @@ body{
             justify-content: space-between;
             align-items: center;
             gap: 2rem;
-            margin-bottom: 2rem;
+            border: 1px solid #99999940;
+            border-radius: .5rem;
+            padding: .75rem;
+            margin-bottom: 1.25rem;
+            transition: all .3s ease-out;
+            &:hover{
+                border-color: transparent;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            }
             &__icon{
                 width: 50px;
                 height: 50px;
@@ -96,11 +107,13 @@ body{
             &__info{
                 flex-grow: 2;
                 h5{
-                    color: #000;
+                    color: #333;
                     font-size: calc(1rem + 0.5vw);
                 }
             }
-            &__time{}
+            &__time{
+                font-size: 1.2rem;
+            }
         }
     }
 }

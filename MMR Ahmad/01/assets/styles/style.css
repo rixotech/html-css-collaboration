@@ -57,6 +57,7 @@ body {
 .events__header__icons > * {
   width: .75rem;
   opacity: .75;
+  cursor: pointer;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
@@ -84,6 +85,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .events__calendar .col p > span + span {
@@ -122,7 +125,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 2rem;
-  margin-bottom: 2rem;
+  border: 1px solid #99999940;
+  border-radius: .5rem;
+  padding: .75rem;
+  margin-bottom: 1.25rem;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.events .list__item:hover {
+  border-color: transparent;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .events .list__item__icon {
@@ -141,7 +155,11 @@ body {
 }
 
 .events .list__item__info h5 {
-  color: #000;
+  color: #333;
   font-size: calc(1rem + 0.5vw);
+}
+
+.events .list__item__time {
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
