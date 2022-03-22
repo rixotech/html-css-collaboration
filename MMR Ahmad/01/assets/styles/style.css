@@ -85,6 +85,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -110,7 +113,7 @@ body {
 
 .events__calendar .col:hover p > span + span,
 .events__calendar .col.active p > span + span {
-  background-color: red;
+  background-color: #33318e;
   color: white;
 }
 
@@ -131,12 +134,24 @@ body {
   margin-bottom: 1.25rem;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
+  cursor: pointer;
 }
 
-.events .list__item:hover {
+.events .list__item.active, .events .list__item:hover {
+  background-color: #33318e;
+  color: white;
   border-color: transparent;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.events .list__item.active img, .events .list__item:hover img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.events .list__item.active h5, .events .list__item:hover h5 {
+  color: inherit;
 }
 
 .events .list__item__icon {

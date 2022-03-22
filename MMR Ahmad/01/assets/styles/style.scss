@@ -1,4 +1,4 @@
-$primary-color: red;
+$primary-color: #33318e;
 $white: white;
 
 *, *::after, *::before{
@@ -61,6 +61,7 @@ body{
         & .col p{
             display: flex;
             flex-direction: column;
+            align-items: center;
             text-transform: uppercase;
             cursor: pointer;
             & > span + span{
@@ -93,9 +94,19 @@ body{
             padding: .75rem;
             margin-bottom: 1.25rem;
             transition: all .3s ease-out;
+            cursor: pointer;
+            &.active,
             &:hover{
+                background-color: $primary-color;
+                color: $white;
                 border-color: transparent;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                & img{
+                    filter: invert(1);
+                }
+                & h5{
+                    color: inherit;
+                }
             }
             &__icon{
                 width: 50px;
