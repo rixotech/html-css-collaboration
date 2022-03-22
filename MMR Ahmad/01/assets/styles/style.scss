@@ -1,0 +1,119 @@
+$primary-color: red;
+$white: white;
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #606060;
+}
+.container{
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 90%;
+        max-width: unset;
+    }
+}
+
+.events{
+    padding: 25px 10px;
+    // Header
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        &__title{}
+        &__icons{
+            display: flex;
+            gap: 15px;
+            & > * {
+                width: .75rem;
+                opacity: .75;
+                cursor: pointer;
+                transition: opacity .3s ease;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    // Calendar
+    &__calendar{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        & .col p{
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            cursor: pointer;
+            & > span + span{
+                color: #000;
+                font-weight: 600;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .3s ease-out;
+            }
+        }
+        & .col:hover p > span + span,
+        & .col.active p > span + span{
+            background-color: $primary-color;
+            color: $white;
+        }
+    }
+    // Events List
+    & .list{
+        &__item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            border: 1px solid #99999940;
+            border-radius: .5rem;
+            padding: .75rem;
+            margin-bottom: 1.25rem;
+            transition: all .3s ease-out;
+            &:hover{
+                border-color: transparent;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            }
+            &__icon{
+                width: 50px;
+                height: 50px;
+                img{
+                    opacity: .75;
+                }
+            }
+            &__info{
+                flex-grow: 2;
+                h5{
+                    color: #333;
+                    font-size: calc(1rem + 0.5vw);
+                }
+            }
+            &__time{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
