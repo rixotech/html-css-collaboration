@@ -9,7 +9,7 @@
   font-family: "inter", sans-serif;
 }
 :root {
-  ---clr-bacgound-: rgba(15, 9, 29, 0.027);
+  ---clr-bacgound-: rgba(39, 6, 116, 0.041);
   ---clr-primary: rgba(43, 14, 112, 0.829);
   ---clr-secondary: rgb(243, 159, 4);
   ---clr-font-praimary: rgb(19, 18, 18);
@@ -78,6 +78,7 @@ svg {
   border-radius: 8px;
   color: var(---clr-font-praimary);
   padding-right: 1rem;
+  margin-right: 1rem;
 }
 .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
@@ -89,9 +90,6 @@ svg {
   background-color: #ffff;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-.inner-spe:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .spe {
   padding: 2rem 0rem;
@@ -112,8 +110,14 @@ svg {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 .btn-spe:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.inner:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 15px;
+  background-color: #ffff;
 }
 @media (max-width: 916px) {
   .inner-item {
