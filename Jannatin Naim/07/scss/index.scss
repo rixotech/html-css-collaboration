@@ -32,6 +32,7 @@ $secondary-color: #fff5f6;
   &__name {
     text-align: center;
     font-size: 2rem;
+    margin-bottom: 4rem;
   }
 
   &__cards {
@@ -50,7 +51,7 @@ $secondary-color: #fff5f6;
       flex-direction: column;
       background: #ffffff;
       border-radius: 0.5rem;
-      padding: 2rem;
+      padding: 3.25rem 0;
       position: relative;
       box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
       transition: all 0.3s ease;
@@ -113,7 +114,7 @@ $secondary-color: #fff5f6;
       align-items: center;
 
       .card {
-        width: 100%;
+        width: 300px;
       }
     }
   }

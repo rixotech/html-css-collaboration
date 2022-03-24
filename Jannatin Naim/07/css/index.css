@@ -26,6 +26,7 @@
 .features__name {
   text-align: center;
   font-size: 2rem;
+  margin-bottom: 4rem;
 }
 .features__cards {
   display: flex;
@@ -42,7 +43,7 @@
   flex-direction: column;
   background: #ffffff;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 3.25rem 0;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   transition: all 0.3s ease;
@@ -96,7 +97,7 @@
     align-items: center;
   }
   .features__cards .card {
-    width: 100%;
+    width: 300px;
   }
 }
 
