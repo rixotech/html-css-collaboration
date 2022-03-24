@@ -1,0 +1,107 @@
+$primary-color: #f66666;
+$secondary-color: #fff5f6;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.features {
+  &__container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 4rem auto;
+    background: $secondary-color;
+    border-radius: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    position: relative;
+    z-index: 0;
+  }
+
+  &__info {
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+
+    > * {
+      width: 24%;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      position: relative;
+      box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+      transition: all 0.3s ease;
+
+      &__icon {
+        border-radius: 50%;
+        width: 96px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+      }
+
+      &__name {
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+      }
+
+      &__info {
+        font-size: 0.85rem;
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      &::after {
+        content: "";
+        border-radius: 0.5rem;
+        height: 99%;
+        width: 99%;
+        background-color: $primary-color;
+        position: absolute;
+        z-index: -2;
+        top: 2px;
+        left: 2px;
+        transform-origin: top left;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+        &::after {
+          top: 0.5rem;
+          left: 0.5rem;
+          height: 110%;
+          transform: rotate(-5deg);
+        }
+      }
+    }
+  }
+}
