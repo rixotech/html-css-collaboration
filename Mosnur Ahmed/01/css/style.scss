@@ -52,11 +52,11 @@ body {
   }
   &__info {
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 1rem;
     &__icn {
       color: var(--primaryColor);
-      font-size: 2.1875em;
+      font-size: 2.75em;
     }
 
     &__start {
