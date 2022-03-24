@@ -1,0 +1,129 @@
+:root {
+  --primaryColor: #6f7dd7;
+  --primaryFont: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  --secondaryColor: #b3c0d3;
+  --primaryBackground: #e4e7f7;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.icn__format {
+  margin: 0 1.5%;
+  color: var(--secondaryColor);
+  font-size: 0.8em;
+}
+
+.btn {
+  width: 15%;
+  background-color: var(--primaryBackground);
+  border: none;
+  border-radius: 10px;
+}
+
+body {
+  font-family: var(--primaryFont);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+
+  &:hover {
+    box-shadow: #f6f7f9 0px 20px 25px -5px, #f6f7f9 0px 10px 10px -5px;
+    cursor: pointer;
+  }
+  &__info {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+    &__icn {
+      color: var(--primaryColor);
+      font-size: 2.75em;
+    }
+
+    &__start {
+      font-size: 0.875em;
+      font-weight: 700;
+
+      &__startTime {
+        color: var(--secondaryColor);
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  &__content {
+    // margin: 0 20% 0 12%;
+    gap: 2%;
+    width: 40%;
+
+    &__browse__link {
+      text-decoration: none;
+      @extend .icn__format;
+    }
+
+    &__comment__link {
+      text-decoration: none;
+      @extend .icn__format;
+    }
+  }
+
+  &__btn {
+    color: var(--primaryColor);
+    font-size: 0.75em;
+    font-weight: 700;
+    padding: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+      background: var(--primaryColor);
+
+      .card__btn__alarm {
+        color: #fff;
+      }
+    }
+
+    &__alarm {
+      font-size: 1.2em;
+      margin: 0 4%;
+      color: var(--primaryColor);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+
+    &__content {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
