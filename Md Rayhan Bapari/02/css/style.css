@@ -84,7 +84,7 @@
     color: #F4DC79;
 }
 .card {
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     border-radius: 5px;
     width: 280px;
     height: 100px;
