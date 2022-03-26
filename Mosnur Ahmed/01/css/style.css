@@ -134,7 +134,8 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  k .card__content {
+
+  .card__content {
     width: 100%;
     text-align: center;
   }
