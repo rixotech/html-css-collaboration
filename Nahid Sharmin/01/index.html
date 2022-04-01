@@ -13,9 +13,11 @@
 <body>
 
     <style>
-
-    
-        
+     body {
+       overflow-x: hidden;
+       background-color: #f2f2f5;
+     }
+      
      *{
        margin: 0;
        padding: 0;
@@ -30,8 +32,9 @@
          }
 
         #cookingweb{
-        width: 1200px;
-        margin: auto;
+        width:90%;
+        max-width: 1200px;
+        margin: 0 auto;
         text-align: center;
         background-color: #f2f2f5;
         padding-bottom: 20px;
@@ -94,6 +97,8 @@
     margin: auto;
     border-radius: 50px;
     box-shadow: 3px 1px 18px 9px #c7c1c1;
+    border: none;
+    outline: none;
   }
 
   .ctext button span {
@@ -103,7 +108,7 @@
     height: 40px;
     padding: 10px 10px;
     border-radius: 50px;
-    margin-top: 5px;
+    margin-top: 7px;
     margin-left: 8px;
     margin-bottom: 5px;
   }
@@ -123,8 +128,9 @@
  .ctext button span i {
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 2px;
+    margin-top: 2px;
+    margin-left: 1px;
+    font-size: 20px;
 }
 
  .ctext button h5 {
@@ -180,7 +186,7 @@
   <section id="cookingweb">
       <div class="container">
         <div class="logo">
-           <img src="button.png" alt="">
+           <a href="#"><img src="button.png" alt=""></a>
           </div>
           <div class="ctext">
               <img src="like-img.png" alt="">
@@ -196,8 +202,138 @@
           </div>
       </div>
   </section>
-    
+  <style>
 
- 
+@media (max-width: 1104px) {
+.logo img {
+    width: 100px;
+}
+
+.ctext img {
+    width: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.ctext h3 {
+    font-size: 10px;
+}
+
+.ctext h1 {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.ctext p {
+    font-size: 10px;
+    width: 210px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.ctext button span {
+    width: 20px;
+    height: 20px;
+}
+
+.ctext button {
+    width: 110px;
+    height: 30px;
+    margin-top: 0px;
+    font-size: 10px;
+    outline: none;
+    border: none;
+}
+
+.ctext button i {
+    color: white;
+    margin-left: 10px;
+    margin-top: 9px;
+    margin-bottom: 0px;
+}
+
+.ctext button span i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+    margin-left: 0px;
+    font-size: 10px;
+}
+
+.ctext button h5 {
+    font-size: 8px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+.cticon i {
+    width: 17px;
+    height: 17px;
+    background: white;
+    padding: 4px 2px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px 0px #888;
+    margin-left: 3px;
+    font-size: 9px;
+}
+
+.cticon {
+    margin-top: 85px;
+    color: #888;
+}
+
+#cookingweb {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    background-color: #f2f2f5;
+    padding-bottom: 35px;
+}
+
+
+
+    }
+    
+@media  (max-width: 950px){
+  #cookingweb {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  background-color: #f2f2f5;
+}
+        
+        }
+    
+        
+        
+    
+    
+    
+@media (max-width: 768px) {
+    #cookingweb {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    background-color: #f2f2f5;
+    padding-bottom: 35px;
+}
+       
+    }
+    
+@media (max-width: 500px) {
+  #cookingweb {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  background-color: #f2f2f5;
+  padding-bottom: 35px;
+}
+       
+    }
+    
+      </style>
 </body>
 </html>
