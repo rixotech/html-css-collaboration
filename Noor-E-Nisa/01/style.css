@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+.property-header{
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;    
+}
+
+.property-header h2{
+    margin-top: 40px;
+    color: #101047;
+}
+.arrows{
+    margin-top: 40px;
+    margin-left: 80px;
+}
+a{
+    text-decoration: none;
+}
+.building-img{
+    border-radius: 10px;
+    padding: 5px;
+}
+.symbol{
+    border: 1px solid #d4d4d4;
+    color: black;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 50%;
+}
+.symbol:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.learnMore{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.box{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.box h4{
+    color: #101047;
+
+}
+
+.box:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.text{
+    padding: 10px;
+}
+.text a{
+    color: #696969;
+
+}
+@media(max-width: 350px){
+    .property-header h2{
+       /* position: relative;
+        left: 20px;*/
+    }
+    .arrows{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-left: 30px;
+        /*position: relative;
+        right: 20px;*/
+    }
+    
+   
+    .container{
+        padding: 10px;
+    }
+
+    .box{
+        position: relative;
+        right: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    *{
+        overflow-x: hidden;
+    }
+    .property-header{
+        display: flex;
+        
+              
+    }
+    .property-header h2{
+        margin-left: 15px;
+    }
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        padding: 50px;
+        gap: 60px;    
+    }
+    .arrows{
+        overflow-x: visible;
+    }
+    .box{
+        min-width: 300px;
+        height: auto;
+    }
+   
+} 
+
+@media (min-width: 640px) {
+    *{
+        overflow-x: hidden;
+
+    }
+
+    .container{
+        display: inline-flex;
+        margin-left: 40px;
+        gap: 20px;
+    }
+    .property-header{
+        display: grid;
+        grid-template-columns: 3fr 1fr 2fr;
+    }
+    .arrows{
+        overflow-x: visible;
+        margin-right: 0px;
+    }
+
+    .property-header h2{
+        margin-left: 50px;
+    }
+    .box{
+        min-width: 350px;
+        height: 150px;
+        margin-left: 80px ;
+        margin-right: 80px;
+    }
+
+    
+}
+/* md */
+@media (min-width: 768px) {
+    *{
+        overflow-x: hidden;
+    }
+    .property-header{
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+        margin-right: 40px;
+    }
+    .box{
+        min-width: 450px;
+        margin-left: 150px;
+        margin-right: 190px;
+    }
+    .arrows{
+        margin-left: 200px;
+    }
+   
+    
+}
+/* lg */
+@media (min-width: 1024px) {
+
+    .property-header{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+    }
+    .property-header h2{
+        margin-left: 80px;
+    }
+
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        gap: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+
+      
+    }
+    .container >*{
+        flex: 1;
+    }
+    
+    .box{
+        min-width: 200px;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+   
+}
+/* xl */
+@media (min-width: 1280px) {
+
+    .property-header{
+        display: grid;
+        grid-template-columns: 3fr 3fr 2fr;
+    }
+    
+    .property-header h2{
+        margin-left: 80px;
+    }
+    
+    .arrows{
+        margin-left: 170px;
+    }
+     
+}
+/* 2xl */
+@media (min-width: 1536px) {
+    .property-header{
+        display: grid;
+        grid-template-columns: 3fr 3fr 2fr;
+    }
+    .arrows{
+        margin-left: 220px;
+        
+    }
+
+}
