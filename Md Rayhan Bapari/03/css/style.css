@@ -1,0 +1,223 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CSS Variables */
+:root {
+    /* Color */
+    --primary : #33318e;
+    --primary-white : #ffffff;
+    --secondary : #fc9d32;
+    --skill-header-h2 : #000000;
+    --skill-header-p : #CFCFCF;
+    --card-text : #423D5D;
+    
+    /* Font Weight */
+    --header-h2 : 700;
+    --header-p : 400;
+    --skill-btn : 400;
+    --card-text-1 : 500;
+    --card-text-2 : 400;
+
+    /* Font Size */
+    --header-h2-size : 2rem;
+    --header-p-size : 1rem;
+    --skill-btn-size : 1rem;
+    --card-text-1-size : 1.15rem;
+    --card-text-2-size : .8rem;
+}
+
+.skills {
+    width: 90%;
+    min-height: 100vh;
+    margin: auto;
+}
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.skills-content .skill-header h2 {
+    font-weight: var(--header-h2);
+    font-size: var(--header-h2-size);
+    color: var(--skill-header-h2);
+    margin-bottom: 5px;
+}
+.skills-content .skill-header p {
+    font-weight: var(--header-p);
+    font-size: var(--header-p-size);
+    color: var(--skill-header-p);
+}
+.skills-content .skill-btn {
+    background: var(--primary);
+    color: var(--primary-white);
+    padding: 10px 30px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    font-weight: var(--skill-btn);
+    color: var(--primary-white);
+    font-size: var(--skill-btn-size);
+    gap: 10px;
+}
+.skills-content .skill-btn i {
+    font-size: .8rem;
+    color: var(--primary-white);
+}
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.card {
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 10px 20px 0 20px;
+    position: relative;
+    transition: all .4s ease;
+}
+.card img {
+    width: 50px;
+    object-fit: cover;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.card-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #ECE6FE;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    transition: all .4s ease;
+}
+.card-btn a, i {
+    color: var(--card-text);
+    font-weight: 400;
+    cursor: pointer;
+}
+.card h3 {
+    font-weight: var(--card-text-1);
+    font-size: var(--card-text-1-size);
+    color: var(--card-text);
+    margin-bottom: 5px;
+}
+.card p {
+    font-weight: var(--card-text-2);
+    font-size: var(--card-text-2-size);
+    color: var(--card-text);
+    margin-bottom: 5px;
+}
+.card:hover {
+    border: 1px solid #33318e;
+    cursor: pointer;
+}
+.card:hover .card-btn {
+    background: #33318e;
+}
+.card:hover .card-btn a {
+    color: var(--primary-white);
+}
+.card:hover .card-btn i {
+    color: var(--primary-white);
+}
+
+/* Resposnive */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .skills-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        align-items: center;
+    }
+    .skills-content {
+        flex-direction: column;
+        align-items: center;
+}
+    .skill-header {
+        margin-bottom: 20px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .skills-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        align-items: center;
+    }
+    .skills-content {
+        flex-direction: column;
+        align-items: center;
+}
+    .skill-header {
+        margin-bottom: 20px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .skills-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:  repeat(3, 1fr);
+        align-items: center;
+    }
+        .skills-content {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        grid-template-columns: 1fr auto;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .skills-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows:  repeat(2, 1fr);
+        align-items: center;
+    }
+        .skills-content {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        grid-template-columns: 1fr auto;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .skills-wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+    }
+        .skills-content {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        grid-template-columns: 1fr auto;
+    }
+}
